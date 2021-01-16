@@ -51,5 +51,15 @@ UserSchema.pre('save', function (next) {
     }
 });
 
+//비밀번호 비교
+UserSchema.methods.comparePassword = function(passwords, cb){
+    bcrypt.compare(passwords,this.password, function(err, isMatch){
+        if(err){
+            return cb(err)
+        }
+        cb(null, isMatch)
+    })
+}
+
 const model = mongoose.model("User",UserSchema);
 export default model;
