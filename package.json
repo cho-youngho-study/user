@@ -1,0 +1,22 @@
+{
+  "name": "react-node",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec babel-node ./bin/www --delay 2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mongoose": "^5.11.12",
+    "morgan": "~1.9.1",
+    "node-sass-middleware": "0.11.0",
+    "nodemon": "^2.0.7",
+    "pug": "2.0.0-beta11"
+  }
+}
