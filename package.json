@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon --exec babel-node ./bin/www --delay 2"
+    "start": "nodemon --exec babel-node ./server/bin/www --delay 2"
   },
   "dependencies": {
     "@babel/core": "^7.12.10",
